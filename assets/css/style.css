@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    //outline: red 1px solid;
+    outline: red 1px solid;
 }
 
 /** links delete color **/
@@ -119,3 +119,12 @@ footer {
     gap: 20px;
     padding: 0px 40px 0px 0px;
 }
+
+.github-logo{
+    align-self: center;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 65px;
+    height: 65px;
+}
+
