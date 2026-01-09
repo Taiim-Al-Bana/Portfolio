@@ -37,9 +37,6 @@ header {
 .logo {
     align-self: center;
     border-radius: 50px;
-    overflow: hidden;
-    width: 65px;
-    height: 65px;
     margin-left: 10px;
 }
 
@@ -125,6 +122,18 @@ ul{gap: 20px; padding: 0px 40px 0px 0px; list-style-type:none;}
     width: fit-content;
     justify-self: center;
 }
+/** begin my works**/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
