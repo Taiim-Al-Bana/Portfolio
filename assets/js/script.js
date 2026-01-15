@@ -11,43 +11,39 @@ function toggleImage(param) {
 
         if (isFirstImage) {
             imgProjects.src = "assets/img/cat1.jpeg";
+            isFirstImage = false;
         } else {
-            imgProjects.src = "assets/img/my-projects.jpeg";
+            imgProjects.src = "assets/img/goede-projects.jpeg";
+            isFirstImage = true;
         }
+    } else {
+       
+    }
 
-        if (param == 'contact-me') {
+    if (param == 'contact-me') {
 
-            if (isFirstImage) {
-                imgContact.src = "assets/img/question.jpeg";
-            }
-            else {
-                imgContact.src = "assets/img/contact-me.jpeg"
-            }
+        if (isFirstImage) {
+            imgContact.src = "assets/img/question.jpeg";
+            isFirstImage = false;
+        } else {
+            imgContact.src = "assets/img/contact-me.jpg";
+            isFirstImage = true;
         }
+    } else {
+       
+    }    
+  
+    if (param == 'my-languages') {
 
-
-        if (param == 'my-languages') {
-            if (isFirstImage) {
-                imgProjects.src = "assets/img/my-languages.jpeg"
-            }
+        if (isFirstImage) {
+            imgMyLanguages.src = "assets/img/cat2.jpeg";
+            isFirstImage = false;
+        } else {
+            imgMyLanguages.src = "assets/img/my-languages.jpeg";
+            isFirstImage = true;
         }
-
-
-
-
-
-
+    } else {
+       
     }
-    else if (param == 'contact-me') {
-        imgContact.src = "assets/img/question.jpeg";
-    }
-
-    else if (param == 'my-languages') {
-        imgMyLanguages.src = "assets/img/cat2.jpeg";
-    }
-
-
-    }
-    isFirstImage = !isFirstImage;
-
-
+       
+}

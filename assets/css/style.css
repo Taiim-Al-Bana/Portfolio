@@ -21,6 +21,8 @@ a{text-decoration: none; color: inherit;}
 .column {display:flex; flex-direction: column;}
 .space-between { display: flex; justify-content: space-between;}
 .align-center {display: flex; align-items: center;}
+.justify-content-center{ display: flex;  justify-content: center;
+}
 
 /** einde veel gebruikte items **/
 
@@ -110,7 +112,6 @@ ul{gap: 20px; padding: 0px 40px 0px 0px; list-style-type:none;}
 .my-projects{
     width: 150px;
     height: 150px;
-
 }
 
 .cat-hover:hover {
@@ -124,9 +125,26 @@ ul{gap: 20px; padding: 0px 40px 0px 0px; list-style-type:none;}
 }
 /** begin my works**/
 
+.my-works-box{
+    height: 480px;
+    width: 50%;
+    background-color: #FFF1F1;
+    justify-items: flex-end;
+}
 
+.my-works-other-box{
+    background-color: #D9D9D9;
+    height: 480px;
+    width: 50%;
+}
 
+.border-radius-img{
+    border-radius: 40px;
+}
 
+.img-gap{
+    gap: 20px;
+}
 
 
 
@@ -148,11 +166,5 @@ footer {
     padding: 0px 40px 0px 0px;
 }
 
-.github-logo{
-    align-self: center;
-    border-radius: 50px;
-    overflow: hidden;
-    width: 65px;
-    height: 65px;
-}
+
 
