@@ -106,7 +106,7 @@ ul{gap: 20px; padding: 0px 40px 0px 0px; list-style-type:none;}
     height: 230px;
     justify-self: center;
     align-self: center;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .my-projects{
@@ -146,12 +146,38 @@ ul{gap: 20px; padding: 0px 40px 0px 0px; list-style-type:none;}
     gap: 20px;
 }
 
+.read-more-works{
+    background-color: rgb(168, 180, 180);
+     padding: 4px 12px;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    justify-self: center;
+}
 
+.more-pinkgoose{
+    top: 50px;
+    display: none;
+}
 
+.more-works{
+background-color: rgb(168, 180, 180);
+border-radius: 6px;
+padding: 4px 12px;
+color: white;
+text-align: center;
+ justify-self: center;
+ position: relative;
+ top: -50px;
+}
 
+.height{
+   height: 480px;
+}
 
-
-
+.hidden{
+display: none;
+}
 
 
 
