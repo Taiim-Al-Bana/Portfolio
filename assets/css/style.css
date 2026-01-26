@@ -6,7 +6,10 @@
 }
 
 /** links delete color **/
-a{text-decoration: none; color: inherit;}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /** veelgebruikte items**/
 .display-flex {
@@ -17,11 +20,42 @@ a{text-decoration: none; color: inherit;}
     color: #ffffff;
 }
 
-.row {display: flex; flex-direction: row;}
-.column {display:flex; flex-direction: column;}
-.space-between { display: flex; justify-content: space-between;}
-.align-center {display: flex; align-items: center;}
-.justify-content-center{ display: flex;  justify-content: center;
+.bgcolor-grey {
+    background-color: #797979;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.txt-align {
+    text-align: center;
 }
 
 /** einde veel gebruikte items **/
@@ -42,9 +76,15 @@ header {
     margin-left: 10px;
 }
 
-ul{gap: 20px; padding: 0px 40px 0px 0px; list-style-type:none;}
+ul {
+    gap: 20px;
+    padding: 0px 40px 0px 0px;
+    list-style-type: none;
+}
 
-.nav-gap {align-items: center;}
+.nav-gap {
+    align-items: center;
+}
 
 /** einde header**/
 
@@ -109,7 +149,7 @@ ul{gap: 20px; padding: 0px 40px 0px 0px; list-style-type:none;}
     border-radius: 10px;
 }
 
-.my-projects{
+.my-projects {
     width: 150px;
     height: 150px;
 }
@@ -123,63 +163,121 @@ ul{gap: 20px; padding: 0px 40px 0px 0px; list-style-type:none;}
     width: fit-content;
     justify-self: center;
 }
+
 /** begin my works**/
 
-.my-works-box{
+.works-title {
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #797979;
+}
+
+.my-works-box {
     height: 480px;
     width: 50%;
     background-color: #FFF1F1;
     justify-items: flex-end;
 }
 
-.my-works-other-box{
+.my-works-other-box {
     background-color: #D9D9D9;
     height: 480px;
     width: 50%;
 }
 
-.border-radius-img{
-    border-radius: 40px;
+.border-radius-img {
+    border-radius: 80px;
 }
 
-.img-gap{
+.img-gap {
     gap: 20px;
 }
 
-.read-more-works{
+.read-more-works {
     background-color: rgb(168, 180, 180);
-     padding: 4px 12px;
+    padding: 4px 12px;
     border-radius: 6px;
     color: white;
     text-align: center;
     justify-self: center;
 }
 
-.more-pinkgoose{
+.more-pinkgoose {
     top: 50px;
     display: none;
 }
 
-.more-works{
-background-color: rgb(168, 180, 180);
-border-radius: 6px;
-padding: 4px 12px;
-color: white;
-text-align: center;
- justify-self: center;
- position: relative;
- top: -50px;
+.more-works {
+    background-color: rgb(168, 180, 180);
+    border-radius: 6px;
+    padding: 4px 12px;
+    color: white;
+    text-align: center;
+    justify-self: center;
+    position: relative;
+    top: -50px;
 }
 
-.height{
-   height: 480px;
+.height {
+    height: 480px;
 }
 
-.hidden{
-display: none;
+.hidden {
+    display: none;
+}
+
+/** begin about me pagina**/
+
+.about-me-title {
+    align-items: center;
+}
+
+.padding-top {
+    padding-top: 10px;
+}
+
+/**einde about me pagina**/
+/** begin contact me pagina **/
+.body-bg{
+    background-color: #FFF1F1;
+}
+
+.contact-me-color {
+    width: 100%;
+    height: 500px;
+    background-color: #FFF1F1;
+}
+
+.contact-me-box {
+    max-width: 500px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    outline: #797979 1px solid;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input,textarea {
+    min-width: 100%;
+    max-width: 100%;
+    max-height: fit-content;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 
+
+.contact-me-img{
+padding: 60px;
+}
 
 /** footer **/
 footer {
@@ -187,10 +285,7 @@ footer {
     height: 80px;
 }
 
-.footer-links{
+.footer-links {
     gap: 20px;
     padding: 0px 40px 0px 0px;
 }
-
-
-
