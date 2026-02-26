@@ -1,86 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Taim</title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria Napoli</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="display-flex ">
-        <div class="logo display-flex">
-            <a href="index.html"><img src="assets/img/LogoTAB.png" alt="logo" height="65px"></a>
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">
+            <div class="logo-circle">🍕</div>
+            <div class="logo-text">Pizzeria Napoli</div>
         </div>
-        <nav class="display-flex nav-gap row">
-            <ul class="row">
-                <li class=""><a href="works.html">My Works</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="contactme.html">Contact me</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" class="nav-order-btn">Bestellen</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <div class="title-section display-flex">
-            <h1>Hallo, ik ben Taim Al Bana</h1>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <p class="hero-eyebrow">Authentiek Napolitaans</p>
+            <h1 class="hero-title">
+                De plek voor<br>
+                <em>authentieke</em><br>
+                pizza &amp; pasta
+            </h1>
+            <p class="hero-sub">
+                Gebakken in een traditionele houtoven, gemaakt met de liefde en recepten uit Napels. Elke pizza een
+                belevenis.
+            </p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn-primary">Bekijk het Menu</a>
+                <a href="#" class="btn-outline">Bestellen</a>
+            </div>
         </div>
-
-        <section class="mini-about-me display-flex color-white">
-
-            <img class="homepage-foto display-flex" src="assets/img/goede foto Taim.jpg" alt="">
-            <h3 class="mini-about-me-txt display-flex">ik ben een eerste jaars student bij ROC Nijmegen,<br>
-                en ik studeer software development. ik ben 17 jaar oud <br>
-                en wil graag dat je mij gaat aannemen! ik kan talen <br>
-                zoals HTML/CSS, Java, en Javascript. ik ben super <br>
-                gemotiveerd om je te helpen met alles van software development.
-            </h3>
-            <a class="read-more display-flex" href="aboutme.html">Read more</a>
-        </section>
-
-
-        <section class="display-flex row">
-            <div class="homepage-other-boxes align-center column homepage-other-title">
-               
-                <img class="cat-hover cat" id="my-projects" src="assets/img/goede-projects.jpeg" alt="Secret!"
-                    onclick="toggleImage('my-projects')">
-                <a href="works.html">My projects</a>
+        <div class="hero-image">
+            <!-- Replace src with your actual pizza photo -->
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900&q=80"
+                alt="Napolitaanse pizza uit de houtoven" />
+            <div class="hero-badge">
+                <span>⭐ 4.8</span>
+                200+ Google Reviews
             </div>
+        </div>
+    </section>
 
-            <div class="homepage-contact-me align-center column homepage-other-title">
-                
-                <img class="cat display-flex cat-hover" id="contact-me" src="assets/img/contact-me.jpg" alt=""
-                    onclick="toggleImage('contact-me')" style="cursor: pointer; width: 300px;">
-                <a href="contactme.html">Contact me</a>
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+        <p class="section-label">Onze Specialiteiten</p>
+        <h2 class="section-title">Handgemaakt Menu</h2>
+        <div class="menu-tabs">
+            <button class="tab active">Pizza</button>
+            <button class="tab">Pasta</button>
+            <button class="tab">Antipasti</button>
+            <button class="tab">Desserts</button>
+            <button class="tab">Dranken</button>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-card-img" style="font-size:3.5rem;background:#e8dfd0;">🍕</div>
+                <div class="menu-card-body">
+                    <h3 class="menu-card-name">Margherita</h3>
+                    <p class="menu-card-desc">Tomaat, mozzarella, basilicum</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">€12,50</span>
+                        <a href="#" class="add-btn">+</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="homepage-other-boxes align-center column homepage-other-title">
-                
-                <img class="cat display-flex cat-hover" id="my-languages" src="assets/img/my-languages.jpeg" alt=""
-                    onclick="toggleImage('my-languages')">
-                <a href="aboutme.html">My languages</a>
+            <div class="menu-card">
+                <div class="menu-card-img" style="font-size:3.5rem;background:#e8dfd0;">🍕</div>
+                <div class="menu-card-body">
+                    <h3 class="menu-card-name">Quattro Stagioni</h3>
+                    <p class="menu-card-desc">Ham, champignons, artisjok, olijven</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">€15,50</span>
+                        <a href="#" class="add-btn">+</a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+            <div class="menu-card">
+                <div class="menu-card-img" style="font-size:3.5rem;background:#e8dfd0;">🍕</div>
+                <div class="menu-card-body">
+                    <h3 class="menu-card-name">Diavola</h3>
+                    <p class="menu-card-desc">Pikante salami, mozzarella, chili</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">€14,00</span>
+                        <a href="#" class="add-btn">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card-img" style="font-size:3.5rem;background:#e8dfd0;">🍕</div>
+                <div class="menu-card-body">
+                    <h3 class="menu-card-name">Napoli</h3>
+                    <p class="menu-card-desc">Ansjovis, kappertjes, oregano</p>
+                    <div class="menu-card-footer">
+                        <span class="menu-price">€13,50</span>
+                        <a href="#" class="add-btn">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- REVIEWS -->
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-header">
+            <div>
+                <p class="section-label" style="color:var(--gold-light)">Wat onze gasten zeggen</p>
+                <div class="reviews-score">4.8 <span class="stars">★★★★★</span></div>
+                <p style="color:rgba(255,255,255,.45); font-size:.85rem; margin-top:.3rem;">Gebaseerd op 200+ Google
+                    Reviews</p>
+            </div>
+            <a href="#" class="google-btn">🔍 Bekijk alle reviews op Google</a>
+        </div>
+        <div class="reviews-track">
+            <div class="review-card">
+                <div class="reviewer">
+                    <div class="reviewer-avatar">JI</div>
+                    <div>
+                        <div class="reviewer-name">Joel Igor</div>
+                        <div class="reviewer-date">Jul 11, 2025</div>
+                    </div>
+                </div>
+                <div class="stars" style="font-size:.85rem;margin-bottom:.5rem;">★★★★★</div>
+                <p class="review-text">De beste pizza in Nijmegen! Echte Italiaanse pizza, met liefde bereid – je proeft
+                    het in elke hap. Absoluut authentiek.</p>
+            </div>
+            <div class="review-card">
+                <div class="reviewer">
+                    <div class="reviewer-avatar">Y</div>
+                    <div>
+                        <div class="reviewer-name">Yaam</div>
+                        <div class="reviewer-date">Apr 28, 2025</div>
+                    </div>
+                </div>
+                <div class="stars" style="font-size:.85rem;margin-bottom:.5rem;">★★★★★</div>
+                <p class="review-text">De pizza is op zijn eind, maar het centrum is duidelijk met zorg bereid. Echte
+                    Italiaanse authentieke pizza. Zeer compliment.</p>
+            </div>
+            <div class="review-card">
+                <div class="reviewer">
+                    <div class="reviewer-avatar">BR</div>
+                    <div>
+                        <div class="reviewer-name">Bas van Heel Raabeam</div>
+                        <div class="reviewer-date">Apr 18, 2025</div>
+                    </div>
+                </div>
+                <div class="stars" style="font-size:.85rem;margin-bottom:.5rem;">★★★★★</div>
+                <p class="review-text">Beste pizza's van de regio. Echte Italiaanse authentieke pizza. Vast recommence
+                    maar we dankijf erbij bij.</p>
+            </div>
+            <div class="review-card">
+                <div class="reviewer">
+                    <div class="reviewer-avatar">JB</div>
+                    <div>
+                        <div class="reviewer-name">Joep Van Den Broek</div>
+                        <div class="reviewer-date">May 1, 2025</div>
+                    </div>
+                </div>
+                <div class="stars" style="font-size:.85rem;margin-bottom:.5rem;">★★★★★</div>
+                <p class="review-text">De lekkerste pizza's van de regio. De service is echt fantastisch. Wij hebben
+                    genoten van onze pizza's.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer class="space-between">
-        <div class="logo display-flex"> <a href="index.html"><img src="assets/img/LogoTAB.png" alt="logo" height="65px" width="65px"></a></div>
-        <nav class="display-flex nav-gap row footer-links">
-
-            <ul class="row">
-                  <li class=""><a href="works.html">My Works</a></li>
-                <li><a href="aboutme.html">About me</a></li>
-                <li><a href="contactme.html">Contact me</a></li>
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div>
+            <h2 class="contact-title">Kom langs of neem contact op</h2>
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                    <p class="contact-label">Telefoon</p>
+                    <p class="contact-value">XXX-XX-XXXX</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <p class="contact-label">Adres</p>
+                    <p class="contact-value">Straatnaam 00, Stad</p>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">🕐</div>
+                <div>
+                    <p class="contact-label">Openingstijden</p>
+                    <p class="contact-value">Di–Zo: 12:00 – 22:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="quick-links">
+            <h3>Handige Links</h3>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Bestellen</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Algemene Voorwaarden</a></li>
+                <li><a href="#">Klachten</a></li>
             </ul>
-        </nav>
-    </footer>
+        </div>
+    </section>
+
+    <div class="footer-bottom">© 2025 Pizzeria Napoli — Alle rechten voorbehouden</div>
 
 
 </body>
-<script src="./assets/js/script.js"></script>
 
 </html>
